@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Press Start 2P', sans-serif;
+    background: url(../img/bg.webp) no-repeat;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.6px;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0px;
+}
+
+.social-list li {
+    margin-right: 15px;
+}
+
+.social-list li:last-child {
+    margin-right: 0px;
+}
+
+.social-list li:first-child a img {
+    width: 40px;
+}
+
+.social-list li a {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 22px;
+    padding: 10px;
+    transition: all .4s;
+    color: #fff;
+    font-weight: 600px;
+}
+
+.social-list li a img,
+.social-list li a svg {
+    width: 30px;
+    height: max-content;
+}
+
+.main-screen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.main-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.main-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.main-area__left {
+    flex-basis: 50%;
+}
+
+.main-area__right {
+    flex-basis: 50%;
+    padding: 40px 30px;
+}
+
+.left-title {
+    font-size: 64px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.left-pre__title {
+    font-weight: 900;
+    font-size: 19px;
+    margin-top: -5px;
+    margin-bottom: 30px;
+}
+
+.slider-area {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-area img {
+    position: relative;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.pre-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pre-total #price-total {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.add-input-remove {
+    display: flex;
+    align-items: center;
+}
+
+.add-input-remove a img {
+    width: 22px;
+    height: auto;
+    object-fit: contain;
+}
+
+.minus-btn,
+.plus-btn {
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.add-input-remove input {
+    width: 100px;
+    border: none;
+    text-align: center;
+    background: transparent;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.add-input-remove input:hover,
+.add-input-remove input:focus {
+    border: none;
+    outline: none;
+}
+
+.right-title {
+    position: relative;
+    font-size: 35px;
+    color: #ffe771;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.right-title img {
+    width: 200px;
+}
+
+.right-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.right-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.right-list li .number {
+    font-size: 14px;
+    margin-right: 29px;
+}
+
+.right-list li .text {
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+}
+
+.pre-total {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.price {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.price span {
+    color: #fff;
+}
+
+.join-btn span {
+    position: relative;
+    z-index: 10;
+}
+
+#root button {
+    width: auto;
+    display: flex;
+    background: rgb(43, 191, 236);
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    margin: 26px auto;
+    font-weight: bold;
+    color: #fff;
+    font-size: 26px;
+    transition: all .2s ease;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 40px 100px;
+}
+
+.wallet-address {
+    color: #fff;
+    text-shadow: 0 4px 3px #00a2d1;
+    text-align: center;
+}
+
+#remaining {
+    display: none;
+}
+
+@media only screen and (min-width: 1400px) {
+    .main-screen {
+        height: 100vh;
+    }
+}
